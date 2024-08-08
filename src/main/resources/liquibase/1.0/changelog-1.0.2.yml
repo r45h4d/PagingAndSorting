@@ -1,0 +1,20 @@
+databaseChangeLog:
+  - changeSet:
+      id: Insert Honda Civic
+      author: Rashad Amanov
+      changes:
+        - insert:
+            tableName: cars
+            columns:
+              - column:
+                  name: brand
+                  value: 'Honda'
+              - column:
+                  name: model
+                  value: 'Civic'
+              - column:
+                  name: color
+                  value: 'Blue'
+              - column:
+                  name: production_year
+                  value: 2021

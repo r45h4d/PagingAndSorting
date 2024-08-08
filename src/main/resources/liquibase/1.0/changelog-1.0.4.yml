@@ -1,0 +1,20 @@
+databaseChangeLog:
+  - changeSet:
+      id: Insert Chevrolet Malibu
+      author: Rashad Amanov
+      changes:
+        - insert:
+            tableName: cars
+            columns:
+              - column:
+                  name: brand
+                  value: 'Chevrolet'
+              - column:
+                  name: model
+                  value: 'Malibu'
+              - column:
+                  name: color
+                  value: 'Black'
+              - column:
+                  name: production_year
+                  value: 2022

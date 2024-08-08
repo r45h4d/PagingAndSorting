@@ -1,0 +1,20 @@
+databaseChangeLog:
+  - changeSet:
+      id: Insert Nissan Altima
+      author: Rashad Amanov
+      changes:
+        - insert:
+            tableName: cars
+            columns:
+              - column:
+                  name: brand
+                  value: 'Nissan'
+              - column:
+                  name: model
+                  value: 'Altima'
+              - column:
+                  name: color
+                  value: 'White'
+              - column:
+                  name: production_year
+                  value: 2018

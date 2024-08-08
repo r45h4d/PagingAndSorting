@@ -1,0 +1,20 @@
+databaseChangeLog:
+  - changeSet:
+      id: Insert Ford Focus
+      author: Rashad Amanov
+      changes:
+        - insert:
+            tableName: cars
+            columns:
+              - column:
+                  name: brand
+                  value: 'Ford'
+              - column:
+                  name: model
+                  value: 'Focus'
+              - column:
+                  name: color
+                  value: 'Green'
+              - column:
+                  name: production_year
+                  value: 2019

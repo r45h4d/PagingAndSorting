@@ -1,0 +1,20 @@
+databaseChangeLog:
+  - changeSet:
+      id: Insert Toyota Corolla
+      author: Rashad Amanov
+      changes:
+        - insert:
+            tableName: cars
+            columns:
+              - column:
+                  name: brand
+                  value: 'Toyota'
+              - column:
+                  name: model
+                  value: 'Corolla'
+              - column:
+                  name: color
+                  value: 'Red'
+              - column:
+                  name: production_year
+                  value: 2020

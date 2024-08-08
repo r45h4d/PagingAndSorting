@@ -1,0 +1,35 @@
+databaseChangeLog:
+  - changeSet:
+      id: Create cars table
+      author: Rashad Amanov
+      changes:
+        - createTable:
+            tableName: cars
+            columns:
+              - column:
+                  name: id
+                  type: BIGINT
+                  autoIncrement: true
+                  constraints:
+                    primaryKey: true
+                    nullable: false
+              - column:
+                  name: brand
+                  type: VARCHAR(16)
+                  constraints:
+                    nullable: false
+              - column:
+                  name: model
+                  type: VARCHAR(16)
+                  constraints:
+                    nullable: false
+              - column:
+                  name: color
+                  type: VARCHAR(16)
+                  constraints:
+                    nullable: false
+              - column:
+                  name: production_year
+                  type: INTEGER
+                  constraints:
+                    nullable: false
